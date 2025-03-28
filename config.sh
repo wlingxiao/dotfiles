@@ -5,10 +5,10 @@ test -f /usr/share/bazzite-cli/bling.sh && source /usr/share/bazzite-cli/bling.s
 ### bling.sh source end
 
 ### dotnet and dotnet tools
-export PATH=$PATH:$HOME/.dotnet
-export PATH="$PATH:/home/xiao/.dotnet/tools"
-DOTNET_ROOT="$(dirname "$(which dotnet)")"
+DOTNET_ROOT=$HOME/.dotnet
 export DOTNET_ROOT
+export PATH="$PATH:$DOTNET_ROOT"
+export PATH="$PATH:$DOTNET_ROOT/tools"
 
 ### nvm
 export NVM_DIR="$HOME/.nvm"
