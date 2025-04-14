@@ -30,3 +30,7 @@ unset-proxy(){
     unset http_proxy
     unset https_proxy
 }
+
+# jdk
+export JAVA_HOME="$HOME/.jdks/temurin-23.0.2"
+export PATH="$PATH:$JAVA_HOME/bin"
