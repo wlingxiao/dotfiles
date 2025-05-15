@@ -34,3 +34,6 @@ unset-proxy(){
 # jdk
 export JAVA_HOME="$HOME/.jdks/temurin-24.0.1"
 export PATH="$PATH:$JAVA_HOME/bin"
+
+# Use Bitwarden as SSH Agent.
+export SSH_AUTH_SOCK=$HOME/.var/app/com.bitwarden.desktop/data/.bitwarden-ssh-agent.sock
