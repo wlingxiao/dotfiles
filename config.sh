@@ -37,3 +37,19 @@ export PATH="$PATH:$JAVA_HOME/bin"
 
 # Use Bitwarden as SSH Agent.
 export SSH_AUTH_SOCK=$HOME/.var/app/com.bitwarden.desktop/data/.bitwarden-ssh-agent.sock
+
+# go
+export PATH=$PATH:$HOME/.go/go1.24.5/bin/:$HOME/.go/bin/
+# go end
+
+# LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:.
+# end LD_LIBRARY_PATH
+
+# pnpm
+export PNPM_HOME="$HOME/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
